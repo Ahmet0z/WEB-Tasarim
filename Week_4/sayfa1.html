@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayfa 1</title>
+    <style>
+    
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+        body {
+            margin: 0;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 500;
+        }
+
+        header,
+        section,
+        footer {
+            min-height: 1rem;
+            padding: 1rem;
+        }
+
+        header {
+            background-color: lightyellow;
+        }
+
+        section {
+            background-color: lightblue;
+        }
+
+        footer {
+            background-color: lightsalmon;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .flexbox{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .logo{
+            font-weight: 900;
+            font-size: 200%;
+        }
+        nav a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        nav a:hover {
+            color: darkblue;
+        }
+
+        .active {
+            text-decoration: underline wavy lightsalmon 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container flexbox">
+            <div class="logo">DEV-DESK</div>
+            <nav>
+                <a class="active" href="index.html">Ana Sayfa</a>
+                <a href="ozellikler.html">Özellikler</a>
+                <a href="satin-al.html">Satin Al</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <h1>DEV-DESK</h1>
+        <p>Yenilikçi masamizi tanittiğimiz web sitemize hoş geldiniz.</p>
+    </section>
+
+    <footer>
+        <div class="container flexbox">
+            <p>Tüm haklari saklidir.</p>
+            <p>Tasarim ve Kodlama : Ahmet Emir Özpolat</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
