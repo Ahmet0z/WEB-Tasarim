@@ -1,0 +1,25 @@
+.boxes {
+    display: flex;
+    width: 900px;
+    height: 600px;
+    background-color: darksalmon;
+    padding: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.item4 {
+    background-color: yellow;
+    order: 5;
+}
+
+.item5 {
+    background-color: red;
+    order: 4;
+}

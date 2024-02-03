@@ -1,0 +1,11 @@
+.sticky {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: greenyellow;
+    border: 1px solid green;
+}
+
+.pad{
+    padding-bottom: 2000px;
+}
