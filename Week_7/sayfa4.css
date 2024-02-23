@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --tema-mavi: #1a4784;
+    --tema-turuncu: #ffab0b;
+    --tema-beyaz: rgb(255,255,255);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    margin-bottom: 1em; /* Etiketin font-size değerine göre ayarla. */
+}
+
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex-kutu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.grid-kutu {
+    display: grid;
+    gap: 1rem;
+}
+
+.mavi-metin {
+    color: var(--tema-mavi);
+}
+
+.mavi-arkaplan {
+    background-color: var(--tema-mavi);
+    color: var(--tema-beyaz);
+}
+
+a.buton {
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    padding: 0.6rem 0.8rem;
+    color: var(--tema-mavi);
+    text-align: center;
+}
+
+a.buton-arkaplanli {
+    background-color: var(--tema-mavi);
+    color: var(--tema-beyaz);
+}
+
+a.buton-cerceveli {
+    background-color: transparent;
+    border: 1px solid var(--tema-mavi);
+}
+
+section.bolge1 {
+    background-color: lightyellow;
+    padding: 2rem 1rem;
+}
+
+section.bolge1 > div {
+    flex: 1;
+}
+
+section.bolge1 h2 {
+    font-size: 250%;
+    font-weight: 500;
+    line-height: 1;
+}
+
+section.bolge1 h3 {
+    font-size: 150%;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.mobilde-goster { /* büyük ekranda gizlenecek */
+    display: none;
+}
+
+.mobilde-gizle { /* büyük ekranda gösterecek2 */
+    display: block;
+}
+
+
+/* ------------------------------------------------------------------ */
+
+/* RESPONSIVE KODLAR */
+@media all and (max-width: 576px) {
+    .mobilde-goster { /* küçük ekranda gösterilecek */
+        display: block;
+    }
+
+    .mobilde-gizle {
+        display: none;
+    }
+
+    section.bolge1 {
+        flex-direction: column;
+    }
+}
