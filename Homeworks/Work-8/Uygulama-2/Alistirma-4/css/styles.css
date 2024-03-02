@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+*{
+    font-family: 'Playfair', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 25%;
+    margin: 15px 0;
+    padding: 15px;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    margin: none;
+}
+
+.media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.media i{
+    background-color: #CCCCCC;
+    padding: 1rem;
+    border: 1px #CCCCCC solid;
+    border-radius: 2rem;
+}
+
+.media a{
+    color: black;
+}
+
+.marker{
+    background-color: black;
+    height: 1px;
+}
