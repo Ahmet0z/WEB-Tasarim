@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --siyah: rgb(17, 17, 17);
+    --siyah-500: rgb(55, 55, 55);
+    --beyaz: rgb(237, 237, 237);
+    --beyaz-500: rgb(213, 213, 213);
+    --mavi: rgb(0, 174, 255);
+    --mavi-koyu: rgb(0, 77, 113);
+    --mavi-acik: rgb(144, 220, 255);
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 1rem;
+    background-color: var(--beyaz-500);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.flex-kutu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+header {
+    padding: 2rem 0;
+}
+
+footer {
+    padding: 2rem 1rem;
+    background-color: var(--mavi-acik);
+    margin: 0 -1rem;
+}
+
+.haber-liste {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.haber-liste > div {
+    border-radius: 15px;
+    overflow: hidden; /* görsel taşmalarını gizle */
+}
+
+.haber-liste > div > img {
+    width: 500px;
+    height: 350px;
+    object-fit: contain;
+}
+
+.ana-kapsayici { /* .container */
+    max-width: 1200px;
+    margin: auto;
+}
+
+main {
+    margin-bottom: 2rem !important;
+}
+
+/* MOBIL UYUMLULUK KODLARI MUTLAKA GENEL KURALLARIN ALTINDA BAŞLAMALI!! */
+
+/* 576px altındaki kurallar */
+@media all and (max-width: 576px) {
+    header, footer > div {
+        flex-direction: column;
+    }
+
+    footer > div p {
+        margin: 0;
+    }
+
+    .haber-liste {
+        grid-template-columns: 1fr;
+    }
+
+    .haber-liste > div {
+        padding: 0.5rem;
+    }
+
+    .haber-liste > div:nth-of-type(even) {
+        background-color: var(--mavi-koyu);
+        color: var(--beyaz)
+    }
+}
+
+
+/* 576px ve 992px aralığındaki ekranlar için.. */
+@media all and (min-width: 576px) and (max-width: 992px) {
+    .haber-liste {
+        grid-template-columns: 1fr 1fr;
+    }
+}
