@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayfa 3</title>
+    <style>
+        #section1 {
+            background-color: lightyellow;
+            min-height: 300px;
+            padding: 1rem;
+        }
+    </style>
+    <link rel="script" href="js/page3.js">
+</head>
+<body>
+    <section id="section1">
+        <p style="color: darkred" oncontextmenu="return false;">P in section1..</p>
+    </section>
+
+    <script>
+        // alert("JS")
+
+        // console.log("LOG")
+
+        document.querySelector("#section1 p").addEventListener( "dblclick" , function() { alert('Clicked!') }  )
+    </script>
+</body>
+</html>

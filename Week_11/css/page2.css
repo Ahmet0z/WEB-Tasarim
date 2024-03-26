@@ -1,0 +1,18 @@
+:root {
+    --theme-light-purple: #f1effe;
+    --theme-dark-purple: #6366f1;
+}
+
+.bg-light-purple {
+    background-color: var(--theme-light-purple);
+}
+
+.text-dark-purple {
+    color: var(--theme-dark-purple)
+}
+
+.sticky-photo img {
+    display: block;
+    max-width: 4rem;
+    margin-left: -16px
+}
