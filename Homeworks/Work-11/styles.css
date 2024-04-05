@@ -1,0 +1,20 @@
+.bg-mozilla1 {
+    background-image: radial-gradient(circle at center,rgba(184,51,225,.08) 0,rgba(144,89,255,.08) 37.1%,rgba(91,109,248,.08) 61.4%,rgba(0,144,237,.08) 100%);
+}
+.bg-mozilla2 {
+    background-color: #f9f9fa;
+}
+.bg-mozilla3 {
+    background-color: #e7dfff;
+}
+
+.span {
+    color: #B833E1;
+}
+.renk {
+    color: #9E9E9E;
+}
+
+.icon{
+    color: #0060df !important;;
+}
