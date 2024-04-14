@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animasyonlar 1</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            display: grid;
+            /* body içinde tüm öğeleri ortalar.. */
+            place-items: center;
+            /* body içinde tüm öğeleri ortalar.. */
+        }
+
+        .wait-animation {
+            width: 30px;
+            height: 30px;
+            background: rebeccapurple;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .wait-animation::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgb(226, 119, 43);
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        @keyframes heart-beat {
+
+            /* animasyon bloğu */
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                transform: scale(140%);
+                opacity: 0.4;
+            }
+        }
+
+        .wait-animation::after {
+            animation: heart-beat 1000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wait-animation"></div>
+</body>
+
+</html>
